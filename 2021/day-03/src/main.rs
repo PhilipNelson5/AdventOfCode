@@ -40,7 +40,12 @@ fn problem_1(input: &Vec<String>) {
     println!("{}", g * e);
 }
 
+fn problem_2(input: &Vec<String>) {
+    
+}
+
 fn main() {
     let input = get_input("input.txt");
     problem_1(&input);
+    problem_2(&input);
 }
