@@ -1,0 +1,68 @@
+{
+  "name": "Advent of Code 2022",
+  // "image": "gcc:12.2.0",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "bash .devcontainer/postcreate.sh",
+  "settings": {
+    "clang-tidy.buildPath": "/workspaces/build",
+    "clang-tidy.compilerArgs": ["-Wno-unknown-warning-option"],
+    "cmake.buildDirectory": "${containerWorkspaceFolder}/../build",
+    "[cpp]": {
+      "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "doxdocgen.generic.includeTypeAtReturn": false,
+    "doxdocgen.generic.paramTemplate": "@param[in] {param} ",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "files.associations": {
+      "*.clang*": "yaml",
+      "*.cmake.in": "cmake"
+    },
+    "git.detectSubmodules": false,
+    "iwyu.compile_commands": "${workspaceFolder}/../build/compile_commands.json",
+    "iwyu.ignore_re": ".*/Dependencies/.*",
+    "iwyu.mapping_file": "${workspaceFolder}/.iwyu.imp",
+    "iwyu.reorder": false,
+    "iwyu.additional_params": "-Xiwyu --quoted_includes_first -Xiwyu --cxx17ns -gcc-toolchain /opt/rh/devtoolset-11/root/usr -Wno-unknown-warning-option",
+    "iwyu.exe": "/usr/local/bin/include-what-you-use",
+    "iwyu.comments": false,
+    "lizard.ccn": 10,
+    "lizard.functionLength": 50,
+    "lizard.parameterCount": 5,
+    "lizard.useModifiedCcn": true
+  },
+  "extensions": [
+    "DavidAnson.vscode-markdownlint",
+    "IBM.output-colorizer",
+    "brunnerh.insert-unicode",
+    "cheshirekow.cmake-format",
+    "cschlosser.doxdocgen",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "exiasr.hadolint",
+    "mhutchie.git-graph",
+    "ms-vscode.cmake-tools",
+    "ms-vscode.cpptools-extension-pack",
+    "notskm.clang-tidy",
+    "pokowaka.pokowaka-iwyu",
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker",
+    "timonwong.shellcheck",
+    "twxs.cmake",
+    "xaver.clang-format"
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder}/../${localWorkspaceFolderBasename}-build,target=/workspaces/build,type=bind,consistency=delegated"
+  ]
+}

@@ -1,0 +1,10 @@
+# UNCLASSIFIED
+#
+# Copyright Space Dynamics Laboratory, 2022. The U.S. Federal Government
+# retains a royalty-free, nonexclusive, nontransferable license to RECON Track
+# Fusion pursuant to DFARS 252.227-7014. All other rights reserved
+
+ignored:
+  - DL3003 # https://github.com/hadolint/hadolint/wiki/DL3003   (Use WORKDIR to switch to a directory.)
+  - DL3033 # https://github.com/hadolint/hadolint/wiki/DL3033   (echo won't expand escape sequences. Consider printf.)
+  - SC2028 # https://github.com/koalaman/shellcheck/wiki/SC2028 (Specify version with yum install -y <package>-<version>)

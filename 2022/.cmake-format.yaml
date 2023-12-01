@@ -1,0 +1,29 @@
+parse:
+  additional_commands:
+    add_track_fusion_executable:
+      flags: [NO_TF_SANITIZER]
+      pargs: "*"
+    add_tracK_fusion_library:
+      pargs: "*"
+    add_track_fusion_sanitizer:
+      pargs: 1
+    add_address_sanitizer:
+      pargs: 1
+    add_thread_sanitizer:
+      pargs: 1
+    add_undefined_behavior_sanitizer:
+      pargs: 1
+    _add_sanitizer:
+      pargs: 1
+format:
+  max_rows_cmdline: 1
+  dangle_parens: true
+  max_lines_hwrap: 1
+  max_pargs_hwrap: 4
+  command_case: lower
+  keyword_case: upper
+  autosort: true
+lint:
+  # Disable required docstrings. I wrote docstrings and cmake-lint still flagged
+  # them as missing or empty.
+  disabled_codes: ["C0111"]

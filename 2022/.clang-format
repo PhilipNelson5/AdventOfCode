@@ -1,0 +1,177 @@
+# UNCLASSIFIED
+#
+# Copyright Space Dynamics Laboratory, 2022. The U.S. Federal Government retains
+# a royalty-free, nonexclusive, nontransferable license to RECON Track Fusion
+# pursuant to DFARS 252.227-7014. All other rights reserved
+
+# a note about commented lines...
+# This style is based on LLVM. Commented lines are the LLVM default.
+# They are left in as documentation for the entirety of the style.
+---
+Language: Cpp
+BasedOnStyle: LLVM
+# AccessModifierOffset: -2
+# AlignAfterOpenBracket: Align
+# AlignConsecutiveMacros: None
+# AlignConsecutiveAssignments: None
+# AlignConsecutiveBitFields: None
+# AlignConsecutiveDeclarations: None
+# AlignEscapedNewlines: Right
+# AlignOperands:   Align
+# AlignTrailingComments: true
+# AllowAllArgumentsOnNextLine: true
+# AllowAllConstructorInitializersOnNextLine: true
+# AllowAllParametersOfDeclarationOnNextLine: true
+# AllowShortEnumsOnASingleLine: true
+# AllowShortBlocksOnASingleLine: Never
+# AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: true
+# AllowShortIfStatementsOnASingleLine: Never
+# AllowShortLoopsOnASingleLine: false
+# AlwaysBreakAfterDefinitionReturnType: None
+# AlwaysBreakAfterReturnType: None
+# AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: true
+# AttributeMacros:
+# - __capability
+BinPackArguments: false
+BinPackParameters: false
+# BraceWrapping:
+#   AfterCaseLabel:  false
+#   AfterClass:      false
+#   AfterControlStatement: Never
+#   AfterEnum:       false
+#   AfterFunction:   false
+#   AfterNamespace:  false
+#   AfterObjCDeclaration: false
+#   AfterStruct:     false
+#   AfterUnion:      false
+#   AfterExternBlock: false
+#   BeforeCatch:     false
+#   BeforeElse:      false
+#   BeforeLambdaBody: false
+#   BeforeWhile:     false
+#   IndentBraces:    false
+#   SplitEmptyFunction: true
+#   SplitEmptyRecord: true
+#   SplitEmptyNamespace: true
+BreakBeforeBinaryOperators: true
+# BreakBeforeConceptDeclarations: true
+BreakBeforeBraces: Allman
+# BreakBeforeInheritanceComma: false
+# BreakInheritanceList: BeforeColon
+# BreakBeforeTernaryOperators: true
+# BreakConstructorInitializersBeforeComma: false
+# BreakConstructorInitializers: BeforeColon
+# BreakAfterJavaFieldAnnotations: false
+# BreakStringLiterals: true
+# ColumnLimit:     80
+# CommentPragmas:  '^ IWYU pragma:'
+# CompactNamespaces: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 2
+# Cpp11BracedListStyle: true
+# DeriveLineEnding: true
+# DerivePointerAlignment: false
+# DisableFormat:   false
+# EmptyLineBeforeAccessModifier: LogicalBlock
+# ExperimentalAutoDetectBinPacking: false
+# FixNamespaceComments: true
+# ForEachMacros:
+#   - foreach
+#   - Q_FOREACH
+#   - BOOST_FOREACH
+# StatementAttributeLikeMacros:
+#   - Q_EMIT
+# IncludeBlocks:   Preserve
+# IncludeCategories:
+#   - Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
+#     Priority:        2
+#     SortPriority:    0
+#     CaseSensitive:   false
+#   - Regex:           '^(<|"(gtest|gmock|isl|json)/)'
+#     Priority:        3
+#     SortPriority:    0
+#     CaseSensitive:   false
+#   - Regex:           '.*'
+#     Priority:        1
+#     SortPriority:    0
+#     CaseSensitive:   false
+# IncludeIsMainRegex: '(Test)?$'
+# IncludeIsMainSourceRegex: ''
+# IndentCaseLabels: false
+# IndentCaseBlocks: false
+# IndentGotoLabels: true
+# IndentPPDirectives: None
+# IndentExternBlock: AfterExternBlock
+# IndentRequires:  false
+# IndentWidth:     2
+# IndentWrappedFunctionNames: false
+# InsertTrailingCommas: None
+# JavaScriptQuotes: Leave
+# JavaScriptWrapImports: true
+# KeepEmptyLinesAtTheStartOfBlocks: true
+# MacroBlockBegin: ''
+# MacroBlockEnd:   ''
+# MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+# ObjCBinPackProtocolList: Auto
+# ObjCBlockIndentWidth: 2
+# ObjCBreakBeforeNestedBlockParam: true
+# ObjCSpaceAfterProperty: false
+# ObjCSpaceBeforeProtocolList: true
+# PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 0
+PenaltyBreakComment: 2000
+PenaltyBreakFirstLessLess: 1000
+PenaltyBreakString: 3000
+PenaltyBreakTemplateDeclaration: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 10000
+# PenaltyIndentedWhitespace: 0
+PointerAlignment: Left
+# ReflowComments:  true
+# SortIncludes:    true
+# SortJavaStaticImport: Before
+# SortUsingDeclarations: true
+# SpaceAfterCStyleCast: false
+# SpaceAfterLogicalNot: false
+# SpaceAfterTemplateKeyword: true
+# SpaceBeforeAssignmentOperators: true
+# SpaceBeforeCaseColon: false
+# SpaceBeforeCpp11BracedList: false
+# SpaceBeforeCtorInitializerColon: true
+# SpaceBeforeInheritanceColon: true
+# SpaceBeforeParens: ControlStatements
+# SpaceAroundPointerQualifiers: Default
+# SpaceBeforeRangeBasedForLoopColon: true
+# SpaceInEmptyBlock: false
+# SpaceInEmptyParentheses: false
+# SpacesBeforeTrailingComments: 1
+# SpacesInAngles:  false
+# SpacesInConditionalStatement: false
+# SpacesInContainerLiterals: true
+# SpacesInCStyleCastParentheses: false
+# SpacesInParentheses: false
+# SpacesInSquareBrackets: false
+# SpaceBeforeSquareBrackets: false
+# BitFieldColonSpacing: Both
+# Standard:        Latest
+# StatementMacros:
+#   - Q_UNUSED
+#   - QT_REQUIRE_VERSION
+# TabWidth:        8
+# UseCRLF:         false
+# UseTab:          Never
+# WhitespaceSensitiveMacros:
+#   - STRINGIZE
+#   - PP_STRINGIZE
+#   - BOOST_PP_STRINGIZE
+#   - NS_SWIFT_NAME
+#   - CF_SWIFT_NAME
+---
+Language: Proto
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true # apparently no effect (yet) in proto files
