@@ -33,6 +33,8 @@ def test_day_4_1():
     assert solve_4_1(read("4.txt")) == 1349
 
 
+# test_day_4_1()
+
 ###############################################################################
 
 
@@ -60,3 +62,5 @@ def test_day_4_2():
     assert solve_4_2(read("4.sample.txt")) == 43
     assert solve_4_2(read("4.txt")) == 8277
 
+
+# test_day_4_2()

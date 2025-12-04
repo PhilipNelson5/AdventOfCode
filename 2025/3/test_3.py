@@ -24,6 +24,8 @@ def test_day_3_1():
     assert solve_3_1(read("3.txt")) == 17244
 
 
+# test_day_3_1()
+
 ###############################################################################
 
 
@@ -47,3 +49,6 @@ def solve_3_2(banks: list[str]) -> int:
 def test_day_3_2():
     assert solve_3_2(read("3.sample.txt")) == 3121910778619
     assert solve_3_2(read("3.txt")) == 171435596092638
+
+
+# test_day_3_2()
